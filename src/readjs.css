@@ -1,0 +1,54 @@
+/*
+ * Read.js Library v0.1.0
+ *
+ * Copyright 2021 Bunoon
+ * Released under the GNU AGPLv3 license
+ */
+
+ 
+/*
+    -------------------------------------------------------------------------
+    Read.js - Text Container
+    -------------------------------------------------------------------------
+*/
+
+div.rjs-text-container {
+    padding: 10px;
+    background-color: #EEEEEE;
+    border-radius: .25rem;
+    border: 1px solid #AAAAAA;
+}
+
+
+/*
+    -------------------------------------------------------------------------
+    Read.js - Links
+    -------------------------------------------------------------------------
+*/
+
+a.rjs-read-more,
+a.rjs-read-more:visited,
+a.rjs-read-less,
+a.rjs-read-less:visited {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.rjs-read-more,
+a.rjs-read-more:visited {
+    color: blue;
+    padding-left: 5px;
+}
+
+a.rjs-read-less,
+a.rjs-read-less:visited {
+    color: red;
+    padding-left: 10px;
+}
+
+a.rjs-read-more:hover,
+a.rjs-read-less:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+    transition: all .3s;
+}

@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Read.js v0.1.0</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <link rel="stylesheet" href="src/readjs.css" />
+        <script src="src/readjs.js"></script>
+    </head>
+
+    <body>
+        <button onclick="readJsInstance.openAll();">Open All</button>
+        <button onclick="readJsInstance.closeAll();">Close All</button>
+        <br />
+        <br />
+        
+        <div data-read-more="{ visible: false, useStyledContainer: true }">If you're visiting this page, you're likely here because you're searching for a random sentence. Sometimes a random word just isn't enough, and that is where the random sentence generator comes into play. By inputting the desired number, you can make a list of as many random sentences as you want or need. Producing random sentences can be helpful in a number of different ways.</div>
+        <br />
+        <div data-read-more="{ visible: true, useStyledContainer: false }">If you're visiting this page, you're likely here because you're searching for a random sentence. Sometimes a random word just isn't enough, and that is where the random sentence generator comes into play. By inputting the desired number, you can make a list of as many random sentences as you want or need. Producing random sentences can be helpful in a number of different ways.</div>
+        <br />
+        <div data-read-more="{ ignore: true }">If you're visiting this page, you're likely here because you're searching for a random sentence. Sometimes a random word just isn't enough, and that is where the random sentence generator comes into play. By inputting the desired number, you can make a list of as many random sentences as you want or need. Producing random sentences can be helpful in a number of different ways.</div>
+    </body>
+
+    <script>
+        var readJsInstance = readJs_Initialize({ 
+            "maximumLengthOfText": 50,
+            "onReadMore": onReadMore,
+            "onReadLess": onReadLess,
+            "useStyledContainers": false
+        });
+
+        function onReadMore() {
+            document.title = "Read.js - Reading More";
+        }
+
+        function onReadLess() {
+            document.title = "Read.js - Reading Less";
+        }
+    </script>
+</html>
