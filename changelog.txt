@@ -1,2 +1,6 @@
+v0.1.1:
+- Fixed all documentation to show the right @ type.
+- Minor documentation tweaks.
+
 v0.1.0:
 - Everything :)

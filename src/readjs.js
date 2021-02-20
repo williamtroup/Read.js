@@ -1,5 +1,5 @@
 /*
- * Read.js Library v0.1.0
+ * Read.js Library v0.1.1
  *
  * Copyright 2021 Bunoon
  * Released under the GNU AGPLv3 license
@@ -9,36 +9,36 @@
 /**
  * Attribute - data-read-more:
  *
- * @param {boolean} visible:                        A boolean flag that states if the element should be visible (in read more view).
- * @param {boolean} ignore:                         A boolean flag that states if the element should be ignored (false by default).
- * @param {boolean} useStyledContainer:             A boolean flag that states if the text detected should be placed inside a styled container (defaults to useStyledContainers option).
+ * @property {boolean} visible:                         A boolean flag that states if the element should be visible (in read more view).
+ * @property {boolean} ignore:                          A boolean flag that states if the element should be ignored (false by default).
+ * @property {boolean} useStyledContainer:              A boolean flag that states if the text detected should be placed inside a styled container (defaults to useStyledContainers option).
  */
 
 
 /**
  * Options - Events:
  *
- * @param {object} onReadMore:                      Specifies an event that will be triggered when the "Read More" link is pressed.
- * @param {object} onReadLess:                      Specifies an event that will be triggered when the "Read Less" link is pressed.
+ * @property {object} onReadMore:                       Specifies an event that will be triggered when the "Read More" link is pressed.
+ * @property {object} onReadLess:                       Specifies an event that will be triggered when the "Read Less" link is pressed.
  */
 
 
 /**
  * Options - Other:
  *
- * @param {string} readMoreText:                    The text that should be used for the "Read More" link.
- * @param {string} readLessText:                    The text that should be used for the "Read Less" link.
- * @param {string} ellipsisText:                    The text that should be used for the "..." (ellipsis) text.
- * @param {number} maximumLengthOfText:             The maximum length text can be before they are converted into Read More views.
- * @param {boolean} useStyledContainers:            A boolean flag that states if the text detected in the elements should be placed inside a styled container (true by default).
+ * @property {string} readMoreText:                     The text that should be used for the "Read More" link.
+ * @property {string} readLessText:                     The text that should be used for the "Read Less" link.
+ * @property {string} ellipsisText:                     The text that should be used for the "..." (ellipsis) text.
+ * @property {number} maximumLengthOfText:              The maximum length text can be before they are converted into Read More views.
+ * @property {boolean} useStyledContainers:             A boolean flag that states if the text detected in the elements should be placed inside a styled container (true by default).
  */
 
 
 /**
  * Quick initializer for Read.js.
- * @param {object} options:                         All the configurable options that should be used (see Options documentation).
- * @param {string} containerID:                     The element ID that contains your read more elements (defaults to the document body).
- * @param {string} elementTags:                     The type of elements that should be looked up (defaults to everything).
+ * @param {object} options:                             All the configurable options that should be used (see Options documentation).
+ * @param {string} containerID:                         The element ID that contains your read more elements (defaults to the document body).
+ * @param {string} elementTags:                         The type of elements that should be looked up (defaults to everything).
  */
 function readJs_Initialize( options, containerID, elementTags ) {
     return new readJs( options, containerID, elementTags );
@@ -47,9 +47,9 @@ function readJs_Initialize( options, containerID, elementTags ) {
 
 /**
  * Read.js main class.
- * @param {object} options:                         All the configurable options that should be used (see Options documentation).
- * @param {string} containerID:                     The element ID that contains your read more elements (defaults to the document body).
- * @param {string} elementTags:                     The type of elements that should be looked up (defaults to everything).
+ * @param {object} options:                             All the configurable options that should be used (see Options documentation).
+ * @param {string} containerID:                         The element ID that contains your read more elements (defaults to the document body).
+ * @param {string} elementTags:                         The type of elements that should be looked up (defaults to everything).
  */
 function readJs( options, containerID, elementTags ) {
     var _options = {},
@@ -275,7 +275,7 @@ function readJs( options, containerID, elementTags ) {
     /**
      * Sets the options that should be used in Read.js.
      * 
-     * @param {object} newOptions:  All the configurable options that should be used (see Options documentation).
+     * @param {object} newOptions:                          All the configurable options that should be used (see Options documentation).
      */
     this.setOptions = function ( newOptions ) {
         if ( newOptions !== null && typeof newOptions === "object" ) {
