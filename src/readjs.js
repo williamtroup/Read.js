@@ -60,6 +60,8 @@ function readJs_Initialize( options, containerID, elementTags ) {
  * 
  * The main Read.js class.
  * 
+ * @class
+ * 
  * @param       {object}    options                                 All the configurable options that should be used (see Options documentation).
  * @param       {string}    containerID                             The element ID that contains your read more elements (defaults to the document body).
  * @param       {string}    elementTags                             The type of elements that should be looked up (defaults to everything).
