@@ -1,3 +1,6 @@
+v0.1.2:
+- Added active CSS effects for links.
+
 v0.1.1:
 - Fixed all documentation to show the right @ type.
 - Minor documentation tweaks.

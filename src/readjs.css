@@ -1,5 +1,5 @@
 /*
- * Read.js Library v0.1.1
+ * Read.js Library v0.1.2
  *
  * Copyright 2021 Bunoon
  * Released under the GNU AGPLv3 license
@@ -49,6 +49,13 @@ a.rjs-read-less:visited {
 a.rjs-read-more:hover,
 a.rjs-read-less:hover {
     opacity: 0.7;
+    text-decoration: underline;
+    transition: all .3s;
+}
+
+a.rjs-read-more:active,
+a.rjs-read-less:active {
+    opacity: 0.5;
     text-decoration: underline;
     transition: all .3s;
 }

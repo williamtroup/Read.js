@@ -1,5 +1,5 @@
 /*
- * Read.js Library v0.1.1
+ * Read.js Library v0.1.2
  *
  * Copyright 2021 Bunoon
  * Released under the GNU AGPLv3 license
