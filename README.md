@@ -1,8 +1,4 @@
-# Read.js
-A JavaScript library for creating Read More links for large text articles.
-
-
-Welcome to Read.js:
+# Welcome to Read.js:
 
 This is a JavaScript library for creating "Read More" links for large text articles.
 
